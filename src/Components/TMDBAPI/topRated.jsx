@@ -7,7 +7,7 @@ const TopRated = () => {
   const { data: topRated, isLoading, isSuccess } = useGetTopRatedMoviesQuery();
   // console.log("THIS IS TOP RATED", topRated.results);
   if (isLoading) {
-    return <h1>isLoading...</h1>;
+    return <h1>Loading...</h1>;
   } else if (isSuccess) {
     console.log("TOP RATED", topRated.results);
     return (
@@ -18,7 +18,7 @@ const TopRated = () => {
             {topRated.results &&
               topRated.results.map((items, index) => {
                 return (
-                  <Col key={index}>
+                  <Col key={index} md={3}>
                     <Card>
                       <Card.Img
                         variant="top"

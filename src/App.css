@@ -4,3 +4,49 @@
   padding: 2rem;
   text-align: center;
 }
+
+.nav-brand {
+  background-color: white;
+}
+
+.nav-brand img {
+  width: 200px;
+}
+
+.nav-link-wrapper {
+  /* margin-left: 100%!important; */
+}
+
+.nav-link-wrapper span {
+  padding: 40px;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+  /* margin-left: 90%; */
+  /* padding: 40px; */
+}
+
+.container a:hover {
+  color: #01b4e4 !important;
+}
+
+.container span {
+  font-size: 2.5rem;
+  padding: 40px;
+}
+
+.nav {
+  padding-top: 10px;
+}
+
+/* THIS IS USER NAVBAR SIGN IN OR LOGIN */
+.user-setup span {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+/* @media max-width(600px) screen {
+} */

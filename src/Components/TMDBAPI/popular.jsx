@@ -6,7 +6,7 @@ const Popular = () => {
   const [popMoviesTwo, setMovies] = useState([]);
   const { data: popMovies, isLoading, isSuccess } = useGetPopularMoviesQuery();
   if (isLoading) {
-    return <h1>isLoading...</h1>;
+    return <h1>Loading...</h1>;
   } else if (isSuccess) {
     return (
       <>
@@ -16,7 +16,7 @@ const Popular = () => {
             {popMovies.results &&
               popMovies.results.map((items, index) => {
                 return (
-                  <Col key={index}>
+                  <Col key={index} md={3}>
                     <Card>
                       <Card.Img
                         variant="top"

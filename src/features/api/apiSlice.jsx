@@ -16,7 +16,7 @@ export const apiSlice = createApi({
       query: ({ name, email, password }) => ({
         url: "/db/sign-up",
         method: "POST",
-        body: [name, email, password],
+        body: { name, email, password },
       }),
     }),
   }),
