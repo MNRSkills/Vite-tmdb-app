@@ -77,7 +77,7 @@ const signUp = () => {
                 value={name}
                 onChange={(e) => setUserName(e.target.value)}
               />
-              <Form.Label>Your Name</Form.Label>
+              <Form.Label>Your Email</Form.Label>
               <Form.Control
                 type="email"
                 value={email}

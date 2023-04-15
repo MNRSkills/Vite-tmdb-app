@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 // import NavItem from 'react-bootstrap/Nav';
 import { Navbar, Container, Nav } from "react-bootstrap";
 
+import SearchBar from "../SearchBar/searchbar";
+
 const Header = () => {
   const logo = {
     margin: "1em",
@@ -37,6 +39,7 @@ const Header = () => {
               <Link to="/login">
                 <span>Login</span>
               </Link>
+              <SearchBar />
             </div>
           </Nav>
         </Navbar.Collapse>

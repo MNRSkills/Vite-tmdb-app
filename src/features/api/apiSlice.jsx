@@ -19,6 +19,16 @@ export const apiSlice = createApi({
         body: { name, email, password },
       }),
     }),
+    loginUser: builder.mutation({
+      query: ({ email, password }) => ({
+        url: "/db/login",
+        method: "POST",
+        body: { email, password },
+      }),
+    }),
+    searchMovies: builder.mutation({
+      query: ({ searchTerm }) => `/search/:${searchTerm}`,
+    }),
   }),
 });
 
@@ -28,4 +38,6 @@ export const {
   useGetPopularMoviesQuery,
   useGetTopRatedMoviesQuery,
   useUserSignUpMutation,
+  useLoginUserMutation,
+  useSearchMoviesMutation,
 } = apiSlice;
